@@ -53,7 +53,7 @@ class cGAN(nn.Module):
 
 class Discriminator(nn.Module):
     def __init__(self):
-        super(DiscriminatorDropout, self).__init__()
+        super(Discriminator, self).__init__()
         self.label_emb = nn.Embedding(10, 10)
 
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=128, kernel_size=5, stride=3, padding=1)

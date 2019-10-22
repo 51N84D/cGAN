@@ -10,7 +10,7 @@ import shutil
 import os
 import csv
 import models.cifar as models
-from models.cgan import cGAN, DiscriminatorDropout
+from models.cgan import cGAN, Discriminator
 from torch.autograd import Variable
 import re
 
