@@ -133,7 +133,7 @@ train_loader = torch.utils.data.DataLoader(
     batch_size=args.train_batch, shuffle=True)
 
 g_model = cGAN().to(device)
-d_model = DiscriminatorDropout().to(device)
+d_model = Discriminator().to(device)
 
 g_optimizer = optim.Adam(g_model.parameters(), lr=args.lr, betas=(args.beta, args.beta1))
 #d_optimizer = optim.Adam(d_model.parameters(), lr=args.lr, betas=(args.beta, args.beta1))
